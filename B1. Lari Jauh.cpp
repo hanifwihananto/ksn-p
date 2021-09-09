@@ -13,8 +13,7 @@ int main(){
 	int jarak[0] = 0;
 	
 	// jangkauan
-	
-
+	int jangkauan[k+1];
 	
 	// patok
 	int a[n+1];
@@ -22,8 +21,8 @@ int main(){
 	// bebek
 	int b[k+1];
 	
-	// looping for
-	int i;
+	// looping
+	int i, j;
 	
 	// patok
 	for(i = 1; i <= n; i++){
@@ -36,6 +35,21 @@ int main(){
 		cin >> b[i];
 	}
 	
+	// menentukan bebek yang melewati patok 
+	for(i = 1; i <= k; i++){
+		j = 0;
+		while(j <= n){
+			if(b[i] >= jarak[j]){
+				jangkauan[i] = j;
+			}
+			j++;
+		}
+	}
+	
+	// mencetak jangkauan yang dicapai oleh masing-masing bebek
+	for(i = 1; i<= k;i++){
+		cout << jangkauan[i] << endl;
+	}
+	
 	return 0;
 }
-
