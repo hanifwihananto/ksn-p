@@ -1,9 +1,9 @@
-#include<iostream.h>
+#include<iostream>
 #include<conio.h>
+using namespace std;
 
-void main(){
+int main(){
 	int i,arr[100],j,n;
-	clrscr();
   
 	cout<<"Enter Size of array: ";
 	cin>>n;
