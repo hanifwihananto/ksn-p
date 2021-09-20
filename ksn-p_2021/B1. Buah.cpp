@@ -47,8 +47,5 @@ int main(){
 	int beratMerah = max / apelMerah;
 	int beratHijau = max / apelHijau;
 	cout << (jumlah - beratMerah) + (jumlah - beratHijau);
-	
-	
-	
 }
 
